@@ -143,12 +143,15 @@
         min-width: auto;
         max-width: none;
         width: 100%;
-        padding: 1rem 0.75rem;
+        padding: 1.25rem 0.75rem;
         margin: 0 auto;
         max-width: 100%;
         border-radius: 8px;
         word-wrap: break-word;
         overflow-wrap: break-word;
+        white-space: normal;
+        overflow: hidden;
+        text-overflow: clip;
     }
 
     .service-icon {
@@ -201,11 +204,15 @@
     }
 
     .service-card {
-        padding: 0.75rem 0.5rem;
+        padding: 1rem 0.5rem;
         border-radius: 6px;
         margin: 0.25rem 0;
         word-wrap: break-word;
         overflow-wrap: break-word;
+        white-space: normal;
+        overflow: hidden;
+        text-overflow: clip;
+        min-height: auto;
     }
 
     .service-icon {
@@ -227,11 +234,14 @@
 
     .service-description {
         font-size: 0.625rem;
-        margin-bottom: 0.5rem;
-        line-height: 1.3;
+        margin-bottom: 0.625rem;
+        line-height: 1.4;
         word-wrap: break-word;
         overflow-wrap: break-word;
         hyphens: auto;
+        white-space: normal;
+        text-align: left;
+        max-width: 100%;
     }
 
     .service-features {
@@ -249,9 +259,13 @@
 /* Extra small screens - Ultra compact */
 @media (max-width: 360px) {
     .service-card {
-        padding: 0.625rem 0.375rem;
+        padding: 0.875rem 0.375rem;
         word-wrap: break-word;
         overflow-wrap: break-word;
+        white-space: normal;
+        overflow: hidden;
+        text-overflow: clip;
+        min-height: auto;
     }
 
     .service-icon {
