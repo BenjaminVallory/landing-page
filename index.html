@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LHAMBDA - Desarrollo de Software Innovador</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/logo/logo-black.png">
+    <link rel="shortcut icon" type="image/png" href="images/logo/logo-black.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="images/logo/logo-black.png" alt="LHAMBDA Logo" class="logo-image">
+                <span class="logo-text">LHAMBDA</span>
+            </div>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#technologies" class="nav-link">Tecnologias</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contacto</a>
+                </li>
+            </ul>
+
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="title-line">Desarrollo</span>
+                    <span class="title-line highlight">Full Stack</span>
+                    <span class="title-line">Profesional</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Especialista en JavaScript, Python y tecnologias modernas. Creo aplicaciones web completas desde el
+                    frontend hasta el backend con arquitecturas escalables.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary">
+                        <span>Ver Proyectos</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Contactame</span>
+                        <i class="fas fa-comments"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="floating-elements">
+                    <div class="element element-1">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <div class="element element-2">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <div class="element element-3">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <div class="element element-4">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="element element-5">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-scroll">
+            <span>Scroll para descubrir mas</span>
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nuestros <span class="highlight">Servicios</span></h2>
+                <p class="section-subtitle">Soluciones tecnologicas completas para cada necesidad</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3 class="service-title">Landing Pages</h3>
+                    <p class="service-description">
+                        Disenos atractivos y optimizados para conversion que capturan la atencion de tus clientes
+                    </p>
+                    <div class="service-features">
+                        <span class="feature">Responsive Design</span>
+                        <span class="feature">SEO Optimizado</span>
+                        <span class="feature">Alta Conversion</span>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3 class="service-title">E-commerce</h3>
+                    <p class="service-description">
+                        Plataformas de comercio electronico robustas con pasarelas de pago y gestion completa
+                    </p>
+                    <div class="service-features">
+                        <span class="feature">Pagos Seguros</span>
+                        <span class="feature">Inventario</span>
+                        <span class="feature">Analytics</span>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3 class="service-title">Software a Medida</h3>
+                    <p class="service-description">
+                        Desarrollo de aplicaciones personalizadas que se adaptan exactamente a tus procesos
+                    </p>
+                    <div class="service-features">
+                        <span class="feature">Personalizado</span>
+                        <span class="feature">Escalable</span>
+                        <span class="feature">Soporte 24/7</span>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3 class="service-title">Sistemas de Reservas</h3>
+                    <p class="service-description">
+                        Plataformas de reservas para hoteles, restaurantes, citas medicas y servicios
+                    </p>
+                    <div class="service-features">
+                        <span class="feature">Tiempo Real</span>
+                        <span class="feature">Notificaciones</span>
+                        <span class="feature">Reportes</span>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="service-title">Apps Moviles</h3>
+                    <p class="service-description">
+                        Aplicaciones nativas e hibridas para iOS y Android con experiencia de usuario excepcional
+                    </p>
+                    <div class="service-features">
+                        <span class="feature">iOS & Android</span>
+                        <span class="feature">UX/UI Premium</span>
+                        <span class="feature">Performance</span>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3 class="service-title">Turismo Digital</h3>
+                    <p class="service-description">
+                        Soluciones para agencias de viaje, guias turisticas y plataformas de reserva de experiencias
+                    </p>
+                    <div class="service-features">
+                        <span class="feature">Mapas Interactivos</span>
+                        <span class="feature">Booking System</span>
+                        <span class="feature">Multi-idioma</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section class="technologies" id="technologies">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Tecnologias que <span class="highlight">Dominamos</span></h2>
+                <p class="section-subtitle">Stack tecnologico moderno para soluciones de vanguardia</p>
+            </div>
+
+            <div class="tech-carousel-container">
+                <div class="tech-carousel" id="techCarousel">
+                    <!-- Frontend -->
+                    <div class="tech-category">
+                        <h3 class="tech-category-title">Frontend</h3>
+                        <div class="tech-items">
+                            <div class="tech-item">
+                                <i class="fab fa-react"></i>
+                                <span>React</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fab fa-vuejs"></i>
+                                <span>Vue.js</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fab fa-angular"></i>
+                                <span>Angular</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fab fa-js"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fab fa-html5"></i>
+                                <span>HTML5</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fab fa-css3-alt"></i>
+                                <span>CSS3</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backend -->
+                    <div class="tech-category">
+                        <h3 class="tech-category-title">Backend</h3>
+                        <div class="tech-items">
+                            <div class="tech-item">
+                                <i class="fab fa-node-js"></i>
+                                <span>Node.js</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fab fa-python"></i>
+                                <span>Python</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fab fa-php"></i>
+                                <span>PHP</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fab fa-laravel"></i>
+                                <span>Laravel</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fas fa-server"></i>
+                                <span>Express</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fas fa-database"></i>
+                                <span>MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mobile -->
+                    <div class="tech-category">
+                        <h3 class="tech-category-title">Mobile</h3>
+                        <div class="tech-items">
+                            <div class="tech-item">
+                                <i class="fab fa-react"></i>
+                                <span>React Native</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fab fa-flutter"></i>
+                                <span>Flutter</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>Ionic</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cloud & DevOps -->
+                    <div class="tech-category">
+                        <h3 class="tech-category-title">Cloud & DevOps</h3>
+                        <div class="tech-items">
+                            <div class="tech-item">
+                                <i class="fab fa-aws"></i>
+                                <span>AWS</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fab fa-google"></i>
+                                <span>Google Cloud</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fab fa-docker"></i>
+                                <span>Docker</span>
+                            </div>
+                            <div class="tech-item">
+                                <i class="fab fa-git-alt"></i>
+                                <span>Git</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nuestros <span class="highlight">Proyectos</span></h2>
+                <p class="section-subtitle">Casos de exito que demuestran nuestra experiencia</p>
+            </div>
+
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="project-preview">
+                            <div class="preview-content">
+                                <i class="fas fa-shopping-cart"></i>
+                                <h4>E-commerce Premium</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">Tienda Online Luxury</h3>
+                        <p class="portfolio-description">
+                            Plataforma de e-commerce para productos de lujo con pasarela de pagos integrada
+                        </p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="project-preview">
+                            <div class="preview-content">
+                                <i class="fas fa-hotel"></i>
+                                <h4>Sistema Hotelero</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">Hotel Management Pro</h3>
+                        <p class="portfolio-description">
+                            Sistema completo de gestion hotelera con reservas online y check-in digital
+                        </p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Laravel</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <div class="project-preview">
+                            <div class="preview-content">
+                                <i class="fas fa-mobile-alt"></i>
+                                <h4>App de Fitness</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-content">
+                        <h3 class="portfolio-title">FitTracker Mobile</h3>
+                        <p class="portfolio-description">
+                            Aplicacion movil para seguimiento de ejercicios con integracion de wearables
+                        </p>
+                        <div class="portfolio-tech">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Node.js</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Hablemos de tu <span class="highlight">Proyecto</span></h2>
+                <p class="section-subtitle">Estamos listos para convertir tu idea en realidad</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>contacto@devsoftstudio.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Telefono</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Ubicacion</h4>
+                            <p>Ciudad, Pais</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Nombre completo</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Email</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone">
+                        <label for="phone">Telefono (opcional)</label>
+                    </div>
+
+                    <div class="form-group">
+                        <select id="service" name="service" required>
+                            <option value="">Selecciona un servicio</option>
+                            <option value="landing">Landing Page</option>
+                            <option value="ecommerce">E-commerce</option>
+                            <option value="software">Software a Medida</option>
+                            <option value="mobile">App Movil</option>
+                            <option value="reservas">Sistema de Reservas</option>
+                            <option value="turismo">Turismo Digital</option>
+                            <option value="consulta">Consulta</option>
+                        </select>
+                        <label for="service">Tipo de servicio</label>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea id="message" name="message" required></textarea>
+                        <label for="message">Cuentanos sobre tu proyecto</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">
+                        <span>Enviar Mensaje</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="images/logo/logo-white.png" alt="LHAMBDA Logo" class="footer-logo-image">
+                        <span class="logo-text">LHAMBDA</span>
+                    </div>
+                    <p class="footer-description">
+                        Transformamos ideas en soluciones tecnologicas innovadoras
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Servicios</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Landing Pages</a></li>
+                        <li><a href="#services">E-commerce</a></li>
+                        <li><a href="#services">Software a Medida</a></li>
+                        <li><a href="#services">Apps Moviles</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Compania</h4>
+                    <ul class="footer-links">
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#technologies">Tecnologias</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                        <li><a href="#">Sobre Nosotros</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-envelope"></i> contacto@devsoftstudio.com</p>
+                        <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Ciudad, Pais</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 LHAMBDA. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>

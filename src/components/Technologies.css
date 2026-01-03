@@ -1,0 +1,138 @@
+/* Technologies Section */
+.technologies {
+    padding: var(--section-padding);
+    background: var(--bg-primary);
+    position: relative;
+    overflow: hidden;
+}
+
+.technologies .section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.technologies .section-title,
+.technologies .section-subtitle {
+    color: var(--text-primary);
+    opacity: 1;
+    visibility: visible;
+}
+
+.technologies .section-title {
+    font-family: var(--font-secondary);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.technologies .section-subtitle {
+    font-size: 1.125rem;
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.tech-carousel-container {
+    position: relative;
+    overflow: hidden;
+    margin-top: 3rem;
+    padding: 2rem 0;
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tech-carousel {
+    display: flex;
+    gap: 2rem;
+    animation: scroll-tech 80s linear infinite;
+    width: max-content;
+}
+
+.tech-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    padding: 1.5rem 2rem;
+    background: var(--white);
+    border-radius: 15px;
+    border: 1px solid var(--gray-200);
+    transition: var(--transition);
+    cursor: pointer;
+    min-width: 120px;
+    box-shadow: var(--shadow-sm);
+    position: relative;
+    overflow: hidden;
+}
+
+.tech-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--primary-red);
+}
+
+.tech-item:hover {
+    background: var(--white);
+    transform: translateY(-8px) scale(1.05);
+    border-color: var(--primary-red);
+    box-shadow: var(--shadow-xl);
+}
+
+.tech-item i {
+    font-size: 2rem;
+    color: var(--primary-red);
+    transition: var(--transition);
+}
+
+.tech-item:hover i {
+    color: var(--accent-purple);
+    transform: scale(1.2);
+}
+
+.tech-item span {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    text-align: center;
+}
+
+/* Mobile adjustments */
+@media (max-width: 1024px) {
+    .tech-carousel {
+        animation-duration: 80s;
+    }
+}
+
+@media (max-width: 768px) {
+    .tech-items {
+        grid-template-columns: 1fr;
+    }
+
+    .tech-carousel {
+        flex-direction: column;
+        animation: none;
+        gap: 1rem;
+    }
+
+    .tech-category {
+        min-width: auto;
+    }
+}
+
+/* Keyframes for tech carousel animation */
+@keyframes scroll-tech {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
